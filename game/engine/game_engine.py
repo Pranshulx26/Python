@@ -1,16 +1,3 @@
-import pygame
-from typing import List
-
-from core.ball import Ball
-from core.paddle import Paddle
-from core.brick import Brick
-from core.game_state import GameState
-from core.collision import CollisionEngine
-from managers.sound_manager import SoundManager
-from ui.renderer import Renderer
-from ui.input_handler import InputHandler
-
-# engine/game_engine.py
 
 import pygame
 from typing import List
@@ -24,6 +11,7 @@ from managers.sound_manager import SoundManager
 from managers.score_manager import ScoreManager
 from ui.renderer import Renderer
 from ui.input_handler import InputHandler
+from ui.screen import Screen
 
 
 class GameEngine:
@@ -168,6 +156,7 @@ class GameEngine:
             return
 
         self.ball.bounce_vertical()  # bounce ONCE — not per brick
+        self.ball.y += self.ball.speed_y
 
         for brick in hit_bricks:
             points = brick.hit()
@@ -188,7 +177,8 @@ class GameEngine:
         Single place where win/lose consequences are handled.
         """
         if self.game_state.is_game_over:
-            self._running = False
+            pass 
+            # self._running = False
 
         if self.game_state.has_won:
             self._handle_level_complete()
