@@ -1,0 +1,33 @@
+## What is git? 
+    -> Git is a free, open-source distributed version control system (VCS) designed to handle everything from small to very large software projects with speed and efficiency. Created by Linus Torvalds in 2005 to manage the Linux kernel, it has since become the global standard for tracking changes in source code during development.
+
+## What is VCS/SCM?
+    -> VCS and SCM are essentially two names for the same thing: systems used to track and manage changes to files over time
+
+    This is the most common term for the software itself. A VCS acts as a digital "time machine" for your project.
+
+    What it does: It records every modification to a file (or set of files) so you can recall specific versions later, compare changes, and see who made what update.
+
+## Why git/VCS is needed?
+
+    -> Git is needed because it transforms software development from a chaotic process of manual saving into an organized, collaborative, and highly resilient workflow. Without it, developers often resort to error-prone methods like "manual versioning" (e.g., project_v1.zip, project_final.zip) which quickly becomes unmanageable.
+
+## Types of VCS:
+    1.) Centralized
+    2.) Distributed
+
+## Advantages:
+    -> Version Control
+    -> Bug Fixing
+    -> Doing non-linear development
+    -> Collaborative development
+
+
+## How Git works
+
+### Step 1: Initializing Git
+```
+git init
+```
+
+
